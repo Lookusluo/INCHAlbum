@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "NXOAuth2.h"
 
 @interface AppDelegate ()
+
+@property (atomic) NSString *outgoingRedirect;
+@property (atomic) NSString *incomingRedirect;
 
 @end
 
@@ -16,9 +20,34 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //registered with instagram
+    self.outgoingRedirect = @"http://product.lookus.co/album/redirect.php/myscheme/thing.com";
+    self.incomingRedirect = @"myscheme://thing.com";
+    
+    [[NXOAuth2AccountStore sharedStore] setClientID:@"ad92045b7dec4d63b9d7d1a08199f7b2"
+                                             secret:@"c7148138dcc94f928922e14a45ee824c"
+                                   authorizationURL:[NSURL URLWithString:@"https://api.instagram.com/oauth/authorize"]
+                                           tokenURL:[NSURL URLWithString:@"https://api.instagram.com/oauth/access_token"]
+                                        redirectURL:[NSURL URLWithString:self.outgoingRedirect]
+                                     forAccountType:@"Instagram"];
+
     return YES;
 }
+-(BOOL) application: (UIApplication *)app handleOpenURL:(nonnull NSURL *)url{
+    NSLog(@"We received a callback");
+    return [[NXOAuth2AccountStore sharedStore] handleRedirectURL:url];
+}
+-(BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    
+    if ([self.incomingRedirect containsString:[url scheme]] && [self.incomingRedirect containsString:[url host]]){
+        NSURL *constructed = [NSURL URLWithString:[NSString stringWithFormat:@"%@?%@", self.outgoingRedirect, [url query]]];
+        return [[NXOAuth2AccountStore sharedStore] handleRedirectURL:constructed];
+    }
+    else
+    {
+    return [[NXOAuth2AccountStore sharedStore] handleRedirectURL:url];
+    }
+};
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

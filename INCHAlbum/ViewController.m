@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "NXOAuth2.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *logoutButton;
+@property (weak, nonatomic) IBOutlet UIButton *refreshButton;
 
 @end
 
@@ -23,6 +27,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)loginButton:(id)sender {
+    [[NXOAuth2AccountStore sharedStore] requestAccessToAccountWithType:@"Instagram"];
+}
+- (IBAction)logoutButton:(id)sender {
+}
+- (IBAction)refreshButton:(id)sender {
 }
 
 
