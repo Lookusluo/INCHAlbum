@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NXOAuth2.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
@@ -28,6 +29,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)loginButton:(id)sender {
+    [[NXOAuth2AccountStore sharedStore] requestAccessToAccountWithType:@"Instagram"];
 }
 - (IBAction)logoutButton:(id)sender {
 }
