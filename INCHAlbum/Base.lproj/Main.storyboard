@@ -26,16 +26,10 @@
                                     <action selector="logoutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYA-mq-PuH"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="天使_5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LkH-6N-Crx">
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="LkH-6N-Crx" secondAttribute="height" multiplier="1:1" id="Sz2-dv-DfT"/>
-                                    <constraint firstAttribute="width" constant="444" id="lzc-wo-BS6"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pji-t0-mfh">
                                 <state key="normal" title="SignIn"/>
                                 <connections>
-                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EA1-PS-Icy"/>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bf3-Sw-sYS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nK1-gM-7LI">
@@ -44,31 +38,38 @@
                                     <action selector="refreshButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="shr-ka-DUp"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="天使_5" translatesAutoresizingMaskIntoConstraints="NO" id="MnS-nD-j9k">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MnS-nD-j9k" secondAttribute="height" multiplier="1:1" id="VRL-b3-hIP"/>
+                                    <constraint firstAttribute="width" constant="375" id="k5u-hb-rn3"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Hs5-b4-UNz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Clg-C0-WqH"/>
                             <constraint firstAttribute="trailing" secondItem="nK1-gM-7LI" secondAttribute="trailing" constant="8" id="G4C-bK-xPj"/>
+                            <constraint firstItem="MnS-nD-j9k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I1y-yQ-d7p"/>
                             <constraint firstItem="pji-t0-mfh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="KMD-q9-P4x"/>
-                            <constraint firstItem="LkH-6N-Crx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PgS-lT-JiF"/>
                             <constraint firstItem="pji-t0-mfh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ukj-LL-Qv1"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nK1-gM-7LI" secondAttribute="bottom" constant="8" id="XfK-Ky-keQ"/>
-                            <constraint firstItem="LkH-6N-Crx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="htR-E4-h8D"/>
+                            <constraint firstItem="MnS-nD-j9k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z3J-C5-JfW"/>
                             <constraint firstAttribute="trailing" secondItem="Hs5-b4-UNz" secondAttribute="trailing" constant="8" id="rUi-uI-30A"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loginButton" destination="pji-t0-mfh" id="UAY-OO-DdM"/>
-                        <outlet property="logoutButton" destination="Hs5-b4-UNz" id="6Ls-ck-bQV"/>
+                        <outlet property="ImageView" destination="MnS-nD-j9k" id="JW7-NA-ZX3"/>
+                        <outlet property="loginButton" destination="pji-t0-mfh" id="xED-xe-T6g"/>
+                        <outlet property="logoutButton" destination="pji-t0-mfh" id="7u2-UG-Fbq"/>
                         <outlet property="refreshButton" destination="nK1-gM-7LI" id="Lak-mg-peD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-650.39999999999998" y="123.68815592203899"/>
         </scene>
     </scenes>
     <resources>
-        <image name="天使_5.jpg" width="1200" height="1200"/>
+        <image name="天使_5" width="1200" height="1200"/>
     </resources>
 </document>
