@@ -11,6 +11,7 @@
 
 @interface AppDelegate ()
 
+//Add these two string in order to manage our expectations of the world
 @property (atomic) NSString *outgoingRedirect;
 @property (atomic) NSString *incomingRedirect;
 
@@ -22,7 +23,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //registered with instagram
     self.outgoingRedirect = @"http://product.lookus.co/album/redirect.php/myscheme/thing.com";
-    self.incomingRedirect = @"myscheme://thing.com";
+    //This is theone that is going to come back from the redirect.php script
+    self.incomingRedirect = @"myscheme://lookus.co";//myscheme must be someting exist, but in class Prof not metion
     
     [[NXOAuth2AccountStore sharedStore] setClientID:@"ad92045b7dec4d63b9d7d1a08199f7b2"
                                              secret:@"c7148138dcc94f928922e14a45ee824c"
@@ -33,11 +35,14 @@
 
     return YES;
 }
+
+//This  callback function has been deprecated in IOS9, dont use this function!
 -(BOOL) application: (UIApplication *)app handleOpenURL:(nonnull NSURL *)url{
     NSLog(@"We received a callback");
     return [[NXOAuth2AccountStore sharedStore] handleRedirectURL:url];
 }
--(BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+//This is the correct callback function to use now
+-(BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options{
     
     if ([self.incomingRedirect containsString:[url scheme]] && [self.incomingRedirect containsString:[url host]]){
         NSURL *constructed = [NSURL URLWithString:[NSString stringWithFormat:@"%@?%@", self.outgoingRedirect, [url query]]];

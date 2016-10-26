@@ -13,6 +13,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIButton *logoutButton;
 @property (weak, nonatomic) IBOutlet UIButton *refreshButton;
+@property (weak, nonatomic) IBOutlet UIImageView *ImageView;
+
+
+
 
 @end
 
@@ -20,7 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+//    self.logoutButton.enabled = false;
+//    self.refreshButton.enabled = false;
 }
 
 
@@ -30,8 +35,12 @@
 }
 - (IBAction)loginButton:(id)sender {
     [[NXOAuth2AccountStore sharedStore] requestAccessToAccountWithType:@"Instagram"];
+//    self.loginButton.enabled = false;
+//    self.logoutButton.enabled = true;
+//    self.refreshButton.enabled = true;
 }
 - (IBAction)logoutButton:(id)sender {
+
 }
 - (IBAction)refreshButton:(id)sender {
 }

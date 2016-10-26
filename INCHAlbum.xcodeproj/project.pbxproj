@@ -14,8 +14,26 @@
 		C31B234F1DC0035E009D29BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31B234D1DC0035E009D29BF /* Main.storyboard */; };
 		C31B23511DC0035E009D29BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31B23501DC0035E009D29BF /* Assets.xcassets */; };
 		C31B23541DC0035E009D29BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31B23521DC0035E009D29BF /* LaunchScreen.storyboard */; };
-		C31B235E1DC007C9009D29BF /* 天使_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C31B235D1DC007C9009D29BF /* 天使_5.jpg */; };
+		C31B23661DC087D0009D29BF /* INCHAlbumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C31B23651DC087D0009D29BF /* INCHAlbumTests.m */; };
+		C31B23741DC08846009D29BF /* INCHAlbumUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C31B23731DC08846009D29BF /* INCHAlbumUITests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C31B23681DC087D0009D29BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C31B23391DC0035D009D29BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C31B23401DC0035D009D29BF;
+			remoteInfo = INCHAlbum;
+		};
+		C31B23761DC08846009D29BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C31B23391DC0035D009D29BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C31B23401DC0035D009D29BF;
+			remoteInfo = INCHAlbum;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3525F4E66D9163B1997193C0 /* Pods-INCHAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INCHAlbum.release.xcconfig"; path = "Pods/Target Support Files/Pods-INCHAlbum/Pods-INCHAlbum.release.xcconfig"; sourceTree = "<group>"; };
@@ -30,7 +48,12 @@
 		C31B23501DC0035E009D29BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C31B23531DC0035E009D29BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C31B23551DC0035E009D29BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C31B235D1DC007C9009D29BF /* 天使_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "天使_5.jpg"; sourceTree = "<group>"; };
+		C31B23631DC087D0009D29BF /* INCHAlbumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = INCHAlbumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31B23651DC087D0009D29BF /* INCHAlbumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INCHAlbumTests.m; sourceTree = "<group>"; };
+		C31B23671DC087D0009D29BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C31B23711DC08846009D29BF /* INCHAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = INCHAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31B23731DC08846009D29BF /* INCHAlbumUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INCHAlbumUITests.m; sourceTree = "<group>"; };
+		C31B23751DC08846009D29BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E6C6139C894B279D42EEEE /* Pods-INCHAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INCHAlbum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INCHAlbum/Pods-INCHAlbum.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,6 +63,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF15EEA69FFA83D84B5B25B /* libPods-INCHAlbum.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31B23601DC087D0009D29BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31B236E1DC08846009D29BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				C31B23431DC0035D009D29BF /* INCHAlbum */,
+				C31B23641DC087D0009D29BF /* INCHAlbumTests */,
+				C31B23721DC08846009D29BF /* INCHAlbumUITests */,
 				C31B23421DC0035D009D29BF /* Products */,
 				17D5C08D9D228143FA981C14 /* Pods */,
 				80A8B8BF8E170272A925D6C2 /* Frameworks */,
@@ -77,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				C31B23411DC0035D009D29BF /* INCHAlbum.app */,
+				C31B23631DC087D0009D29BF /* INCHAlbumTests.xctest */,
+				C31B23711DC08846009D29BF /* INCHAlbumUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,9 +142,26 @@
 			isa = PBXGroup;
 			children = (
 				C31B23451DC0035D009D29BF /* main.m */,
-				C31B235D1DC007C9009D29BF /* 天使_5.jpg */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C31B23641DC087D0009D29BF /* INCHAlbumTests */ = {
+			isa = PBXGroup;
+			children = (
+				C31B23651DC087D0009D29BF /* INCHAlbumTests.m */,
+				C31B23671DC087D0009D29BF /* Info.plist */,
+			);
+			path = INCHAlbumTests;
+			sourceTree = "<group>";
+		};
+		C31B23721DC08846009D29BF /* INCHAlbumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C31B23731DC08846009D29BF /* INCHAlbumUITests.m */,
+				C31B23751DC08846009D29BF /* Info.plist */,
+			);
+			path = INCHAlbumUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +187,42 @@
 			productReference = C31B23411DC0035D009D29BF /* INCHAlbum.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C31B23621DC087D0009D29BF /* INCHAlbumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C31B236A1DC087D0009D29BF /* Build configuration list for PBXNativeTarget "INCHAlbumTests" */;
+			buildPhases = (
+				C31B235F1DC087D0009D29BF /* Sources */,
+				C31B23601DC087D0009D29BF /* Frameworks */,
+				C31B23611DC087D0009D29BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C31B23691DC087D0009D29BF /* PBXTargetDependency */,
+			);
+			name = INCHAlbumTests;
+			productName = INCHAlbumTests;
+			productReference = C31B23631DC087D0009D29BF /* INCHAlbumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C31B23701DC08846009D29BF /* INCHAlbumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C31B23781DC08846009D29BF /* Build configuration list for PBXNativeTarget "INCHAlbumUITests" */;
+			buildPhases = (
+				C31B236D1DC08846009D29BF /* Sources */,
+				C31B236E1DC08846009D29BF /* Frameworks */,
+				C31B236F1DC08846009D29BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C31B23771DC08846009D29BF /* PBXTargetDependency */,
+			);
+			name = INCHAlbumUITests;
+			productName = INCHAlbumUITests;
+			productReference = C31B23711DC08846009D29BF /* INCHAlbumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -142,6 +236,18 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6N5G84BXLR;
 						ProvisioningStyle = Automatic;
+					};
+					C31B23621DC087D0009D29BF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6N5G84BXLR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C31B23401DC0035D009D29BF;
+					};
+					C31B23701DC08846009D29BF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6N5G84BXLR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C31B23401DC0035D009D29BF;
 					};
 				};
 			};
@@ -159,6 +265,8 @@
 			projectRoot = "";
 			targets = (
 				C31B23401DC0035D009D29BF /* INCHAlbum */,
+				C31B23621DC087D0009D29BF /* INCHAlbumTests */,
+				C31B23701DC08846009D29BF /* INCHAlbumUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -171,7 +279,20 @@
 				C31B23541DC0035E009D29BF /* LaunchScreen.storyboard in Resources */,
 				C31B23511DC0035E009D29BF /* Assets.xcassets in Resources */,
 				C31B234F1DC0035E009D29BF /* Main.storyboard in Resources */,
-				C31B235E1DC007C9009D29BF /* 天使_5.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31B23611DC087D0009D29BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31B236F1DC08846009D29BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +357,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C31B235F1DC087D0009D29BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31B23661DC087D0009D29BF /* INCHAlbumTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31B236D1DC08846009D29BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31B23741DC08846009D29BF /* INCHAlbumUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C31B23691DC087D0009D29BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C31B23401DC0035D009D29BF /* INCHAlbum */;
+			targetProxy = C31B23681DC087D0009D29BF /* PBXContainerItemProxy */;
+		};
+		C31B23771DC08846009D29BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C31B23401DC0035D009D29BF /* INCHAlbum */;
+			targetProxy = C31B23761DC08846009D29BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C31B234D1DC0035E009D29BF /* Main.storyboard */ = {
@@ -354,10 +504,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6N5G84BXLR;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = INCHAlbum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = INCH.INCHAlbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -367,10 +519,62 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6N5G84BXLR;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = INCHAlbum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = INCH.INCHAlbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C31B236B1DC087D0009D29BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6N5G84BXLR;
+				INFOPLIST_FILE = INCHAlbumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = INCH.INCHAlbumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/INCHAlbum.app/INCHAlbum";
+			};
+			name = Debug;
+		};
+		C31B236C1DC087D0009D29BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6N5G84BXLR;
+				INFOPLIST_FILE = INCHAlbumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = INCH.INCHAlbumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/INCHAlbum.app/INCHAlbum";
+			};
+			name = Release;
+		};
+		C31B23791DC08846009D29BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6N5G84BXLR;
+				INFOPLIST_FILE = INCHAlbumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = INCH.INCHAlbumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = INCHAlbum;
+			};
+			name = Debug;
+		};
+		C31B237A1DC08846009D29BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6N5G84BXLR;
+				INFOPLIST_FILE = INCHAlbumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = INCH.INCHAlbumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = INCHAlbum;
 			};
 			name = Release;
 		};
@@ -391,6 +595,24 @@
 			buildConfigurations = (
 				C31B23591DC0035E009D29BF /* Debug */,
 				C31B235A1DC0035E009D29BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C31B236A1DC087D0009D29BF /* Build configuration list for PBXNativeTarget "INCHAlbumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31B236B1DC087D0009D29BF /* Debug */,
+				C31B236C1DC087D0009D29BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C31B23781DC08846009D29BF /* Build configuration list for PBXNativeTarget "INCHAlbumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31B23791DC08846009D29BF /* Debug */,
+				C31B237A1DC08846009D29BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
